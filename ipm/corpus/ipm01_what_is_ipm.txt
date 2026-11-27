@@ -1,0 +1,5 @@
+Title: What Integrated Pest Management means
+URL: https://www.fao.org/pest-and-pesticide-management/ipm/integrated-pest-management/en/
+Org: FAO
+
+Integrated Pest Management (IPM) is a way of keeping pests below the level where they cause real economic loss, instead of trying to kill every insect in the field. It combines many methods: healthy seed, resistant varieties, good crop timing, conserving natural enemies, traps and, only when really needed, a carefully chosen pesticide. The idea is that a healthy crop in a balanced field ecosystem can tolerate some pests. IPM also protects farmer health, pollinators, soil and water, and slows down pests becoming resistant to chemicals. Farmers are encouraged to observe their fields every week and take decisions based on what they actually see, not on a calendar spray schedule.
