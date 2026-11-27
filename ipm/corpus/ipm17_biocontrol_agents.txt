@@ -1,0 +1,5 @@
+Title: Biological control agents used in IPM
+URL: https://nbair.res.in/
+Org: ICAR-National Bureau of Agricultural Insect Resources (NBAIR)
+
+Biocontrol uses living organisms to control pests. Common examples: Trichogramma wasps that lay their eggs inside pest eggs (used against stem borers and bollworms); Chrysoperla (green lacewing) larvae that eat aphids and whiteflies; the bacterium Bacillus thuringiensis (Bt) that kills caterpillars; Pseudomonas fluorescens and Trichoderma that protect plants from fungal diseases; and fungi like Metarhizium and Beauveria that infect insects. Bio-agents must be stored properly, used before their expiry date, and released at the right pest stage. They work best when chemical sprays are avoided around the time of release.

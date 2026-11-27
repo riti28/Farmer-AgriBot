@@ -1,0 +1,5 @@
+Title: IPM as the national plant protection policy in India
+URL: https://ppqs.gov.in/
+Org: Directorate of Plant Protection, Quarantine & Storage (Govt. of India)
+
+India has adopted IPM as the main principle of its plant protection policy. Central IPM Centres in many states run farmer field schools, train extension staff and farmers, and promote biocontrol agents such as Trichogramma egg parasitoids and bio-pesticides. They also do pest surveillance and release crop-wise IPM packages that list pests, their economic threshold levels and recommended steps. Farmers are told to prefer cultural, mechanical and biological methods first, and to use only pesticides that are registered for that crop and pest. The packages are a good starting point, but local advice from the state agriculture department or KVK should be followed for doses and timing.
