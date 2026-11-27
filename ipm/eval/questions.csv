@@ -1,0 +1,31 @@
+id,question,expected_doc_ids,answer_keyword
+1,What is integrated pest management?,ipm01_what_is_ipm,natural enemies
+2,What is push-pull intercropping against fall armyworm?,ipm26_faw_africa,push-pull
+3,What is the economic threshold level?,ipm03_economic_threshold,control action
+4,How should I scout my field for pests?,ipm03_economic_threshold,zig-zag
+5,What is hopper burn in rice?,ipm04_rice_bph,hopper burn
+6,At how many hoppers per hill should I act against brown planthopper?,ipm04_rice_bph,10 hoppers
+7,What are the symptoms of yellow stem borer: dead heart and white ear?,ipm05_rice_stem_borer,dead heart
+8,How can I reduce rice stem borer egg masses before transplanting?,ipm05_rice_stem_borer,clip
+9,How do I manage rice leaf folder?,ipm06_rice_other_pests,leaf folder
+10,How do I identify fall armyworm larva?,ipm07_faw_identification,inverted Y
+11,When was fall armyworm first reported in India?,ipm07_faw_identification,2018
+12,Can sand or ash in the maize whorl control fall armyworm?,ipm08_faw_management,whorl
+13,How many pheromone traps per acre for fall armyworm in Karnataka?,ipm09_faw_karnataka,5 per acre
+14,How was pink bollworm eradicated in the United States?,ipm29_pbw_usa|ipm11_pbw_management,sterile
+15,What damage does pink bollworm cause in cotton bolls?,ipm10_pbw_biology,rosette
+16,Is Bt cotton still protecting against pink bollworm?,ipm10_pbw_biology,resistance
+17,Why should cotton crop be terminated by December?,ipm11_pbw_management,December
+18,What is mating disruption for pink bollworm?,ipm11_pbw_management,mating
+19,How to manage sucking pests of cotton in north Karnataka?,ipm12_cotton_raichur,sticky traps
+20,What weather favours early shoot borer in sugarcane?,ipm13_esb_biology,dry
+21,Does trash mulching reduce sugarcane early shoot borer?,ipm14_esb_management,trash mulching
+22,What are the symptoms of neck blast in ragi?,ipm15_ragi_blast,neck
+23,Which ragi variety is resistant to blast?,ipm16_ragi_blast_management,GPU 28
+24,What is Trichogramma and how does it work?,ipm17_biocontrol_agents|ipm05_rice_stem_borer|ipm14_esb_management,Trichogramma
+25,How often should pheromone lures be changed?,ipm18_traps,2-4 weeks
+26,What safety precautions should I take while spraying pesticide?,ipm19_safe_pesticide_use,gloves
+27,Where can a farmer get a diagnosis for a sick plant?,ipm20_extension_plant_clinics,plant clinics
+28,What is the price of gold in Delhi today?,none,
+29,Who won the cricket world cup?,none,
+30,How do I repair my smartphone screen?,none,
