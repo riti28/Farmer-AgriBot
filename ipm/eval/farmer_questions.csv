@@ -1,0 +1,29 @@
+id,question,expected_doc_ids,answer_keyword
+1,worms eating my maize,ipm47_maize_pests_overview|ipm07_faw_identification|ipm08_faw_management|ipm09_faw_karnataka|ipm26_faw_africa,armyworm|borer
+2,which spray for cotton,ipm49_cotton_pests_overview|ipm11_pbw_management|ipm12_cotton_raichur,sucking|bollworm
+3,insects in sugarcane,ipm48_sugarcane_pests_overview|ipm13_esb_biology|ipm14_esb_management,borer
+4,when should I spray insecticide,ipm38_when_to_spray|ipm03_economic_threshold,threshold
+5,rice crop pest,ipm46_rice_pests_overview|ipm04_rice_bph|ipm05_rice_stem_borer|ipm25_rice_global,borer|planthopper
+6,my rice leaves are turning yellow what to do,ipm39_yellow_leaves|ipm46_rice_pests_overview|ipm04_rice_bph,deficiency|hopper
+7,how to control aphids,ipm30_aphids,neem|lady beetle|natural enemies
+8,my crop is dying,ipm45_crop_dying|ipm39_yellow_leaves,root|wilt
+9,what is neem oil,ipm40_neem,azadirachtin
+10,small white flies under my cotton leaves,ipm31_whitefly,whitefl
+11,white ants are eating my sugarcane,ipm35_termites|ipm48_sugarcane_pests_overview,termite
+12,rats in my paddy field,ipm37_rats,burrow|rodent
+13,my plant leaves have silver streaks,ipm32_thrips,thrips
+14,tiny red insects with web under the leaves,ipm33_mites,mite
+15,cotton leaf edges turning red and curling,ipm34_jassids,jassid|leafhopper
+16,grubs eating roots of groundnut,ipm36_white_grub,grub
+17,how much pesticide per acre,ipm44_pesticide_label,litre|label
+18,is there an organic way to kill caterpillars,ipm42_bt|ipm40_neem,neem|thuringiensis|bt
+19,how do I treat seeds before sowing,ipm43_seed_treatment,fungicide|trichoderma
+20,what is trichoderma,ipm41_trichoderma,fungus
+21,how to stop fungus disease in roots,ipm41_trichoderma|ipm45_crop_dying,trichoderma|root rot
+22,black spots on ragi leaves,ipm15_ragi_blast|ipm16_ragi_blast_management|ipm28_finger_millet_africa,blast
+23,my paddy has brown dried patches,ipm04_rice_bph|ipm25_rice_global|ipm46_rice_pests_overview,hopper
+24,worms inside cotton bolls,ipm10_pbw_biology|ipm11_pbw_management|ipm49_cotton_pests_overview,bollworm
+25,what does the colour on a pesticide bottle mean,ipm44_pesticide_label|ipm19_safe_pesticide_use,triangle|toxic
+26,how do I apply for a crop loan,none,
+27,what is the price of tomato today,none,
+28,how to repair my tractor engine,none,

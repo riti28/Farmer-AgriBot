@@ -22,7 +22,16 @@ def pretty(value):
     return value.replace("_", " ").capitalize()
 
 
+@st.cache_resource(show_spinner="Loading the search model (first visit only, ~30 s)...")
+def load_search_model():
+    """Load the embedding model and chunk embeddings ONCE for all users of the app."""
+    model = rag.get_embedder()
+    rag.get_chunk_vectors()
+    return model
+
+
 st.set_page_config(page_title="AgriBot IPM", page_icon="🌾")
+rag.EMBEDDER = load_search_model()
 st.title("Farmer AgriBot - Integrated Pest Management (IPM)")
 st.warning(DISCLAIMER)
 tab1, tab2 = st.tabs(["Pest Risk Predictor", "Ask IPM"])
@@ -75,15 +84,26 @@ with tab2:
     if "chat" not in st.session_state:
         st.session_state.chat = []  # list of (role, text) pairs
 
+    st.caption("Ask in everyday words, e.g. *worms eating my maize* or *my rice leaves are turning yellow*.")
     for role, text in st.session_state.chat:
         st.chat_message(role).markdown(text)
 
-    question = st.chat_input("Ask a pest management question")
+    # "Not in my documents" -> show 3 closest topics as buttons; a click asks that topic
+    clicked = None
+    for i, topic in enumerate(st.session_state.get("suggestions", [])):
+        if st.button(f"🔎 {topic}", key=f"suggestion_{len(st.session_state.chat)}_{i}"):
+            clicked = topic
+
+    question = st.chat_input("Ask a pest management question") or clicked
     if question:
-        answer, sources = rag.answer(question)
-        if sources:
-            answer += "\n\n**Sources:**  \n" + "  \n".join(  # "  \n" = line break in Markdown
+        result = rag.answer(question)
+        text = result["text"]
+        if result["sources"]:
+            text += "\n\n**Sources:**  \n" + "  \n".join(  # "  \n" = line break in Markdown
                 f"[{n}] [{s['title']}]({s['url']}) - {s['org']} (score {s['score']})"
-                for n, s in enumerate(sources, start=1))
-        st.session_state.chat += [("user", question), ("assistant", answer)]
+                for n, s in enumerate(result["sources"], start=1))
+        if result["suggestions"]:
+            text += "\n\n**Topics we cover that may help** (click one below):"
+        st.session_state.suggestions = result["suggestions"]
+        st.session_state.chat += [("user", question), ("assistant", text)]
         st.rerun()

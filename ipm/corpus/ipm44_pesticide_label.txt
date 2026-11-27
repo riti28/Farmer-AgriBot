@@ -1,0 +1,5 @@
+Title: Reading a pesticide label and working out the dose per acre
+URL: https://ppqs.gov.in/
+Org: Directorate of Plant Protection, Quarantine & Storage (Govt. of India)
+
+The label and leaflet tell you which crops and pests the product is approved for, the dose, the waiting period before harvest, first aid and safe disposal. In India a coloured triangle on the label shows toxicity: red is extremely toxic, yellow highly toxic, blue moderately toxic and green slightly toxic. The dose is usually given per hectare or per acre (1 hectare = about 2.5 acres) or as millilitres or grams per litre of water. For a knapsack sprayer, first measure how many litres of water you need to cover one acre (often about 150 to 200 litres for field crops), then add product to each tank according to the label. For example, if the label says 2 ml per litre and your tank holds 15 litres, add 30 ml per tank. Never increase the dose to make it stronger; overdosing wastes money, harms the crop and speeds up resistance.

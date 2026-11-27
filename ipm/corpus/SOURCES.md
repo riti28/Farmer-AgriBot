@@ -3,7 +3,7 @@
 Each `.txt` note in this folder is a short summary **written in our own words** (no copied text).
 The first three lines of each note hold its `Title`, `URL` and `Org`. The doc id is the file name without `.txt`.
 
-**URL status** (checked 2026-11-27 with an automatic HTTP request):
+**URL status** (checked 2026-11-27 with an automatic HTTP request). Notes ipm30-ipm49 were added later with the same rules:
 - **OK**: the site answered (HTTP 200).
 - **VERIFY**: the site did not answer from our network (ICAR sites often block outside requests) or redirected. Open it in a browser and confirm it.
 
@@ -43,3 +43,23 @@ The first three lines of each note hold its `Title`, `URL` and `Org`. The doc id
 | ipm27_pesticide_code | International Code of Conduct on Pesticide Management | FAO & WHO | https://www.fao.org/pest-and-pesticide-management/pesticide-risk-reduction/code-conduct/en/ | OK |
 | ipm28_finger_millet_africa | Finger millet blast in East Africa and South Asia | ICRISAT | https://www.icrisat.org/ | OK (find exact page) |
 | ipm29_pbw_usa | Pink bollworm eradication in the United States | USDA APHIS | https://www.aphis.usda.gov/ | VERIFY (blocks automatic checks) |
+| ipm30_aphids | Aphids: small sap-sucking insects | UC IPM (University of California) | https://ipm.ucanr.edu/ | OK (find exact pest page) |
+| ipm31_whitefly | Whitefly in cotton and vegetables | ICAR-CICR | https://cicr.org.in/ | OK (find exact page) |
+| ipm32_thrips | Thrips: tiny insects that scrape leaves | TNAU Agritech Portal | https://www.agritech.tnau.ac.in/ | VERIFY |
+| ipm33_mites | Spider mites and other mites | UC IPM (University of California) | https://ipm.ucanr.edu/ | OK (find exact pest page) |
+| ipm34_jassids | Jassids (leafhoppers) in cotton, okra and other crops | ICAR-CICR | https://cicr.org.in/ | OK (find exact page) |
+| ipm35_termites | Termites in field crops | ICAR-NCIPM | https://ncipm.icar.gov.in/ | VERIFY |
+| ipm36_white_grub | White grubs in soil | UAS Dharwad | https://www.uasd.edu/ | OK (find exact page) |
+| ipm37_rats | Rats and rodents in crops and stores | Directorate of PPQS, Govt. of India | https://ppqs.gov.in/ | OK (find exact page) |
+| ipm38_when_to_spray | When should you spray a pesticide? | ICAR-NCIPM | https://ncipm.icar.gov.in/ | VERIFY |
+| ipm39_yellow_leaves | Yellow leaves: pest, disease or nutrient deficiency? | TNAU Agritech Portal | https://www.agritech.tnau.ac.in/ | VERIFY |
+| ipm40_neem | Neem products in pest management | ICAR-NCIPM | https://ncipm.icar.gov.in/ | VERIFY |
+| ipm41_trichoderma | Trichoderma: a friendly fungus against soil diseases | ICAR-NBAIR | https://nbair.res.in/ | VERIFY (redirects) |
+| ipm42_bt | Bt (Bacillus thuringiensis) bio-insecticide | UC IPM (University of California) | https://ipm.ucanr.edu/ | OK (find exact page) |
+| ipm43_seed_treatment | Seed treatment: protecting the crop from day one | Directorate of PPQS, Govt. of India | https://ppqs.gov.in/ | OK (find exact page) |
+| ipm44_pesticide_label | Reading a pesticide label and dose per acre | Directorate of PPQS, Govt. of India | https://ppqs.gov.in/ | OK (find exact page) |
+| ipm45_crop_dying | Why is my crop dying? Wilting and sudden drying | CABI (PlantwisePlus) | https://www.plantwise.org/ | VERIFY (blocks automatic checks) |
+| ipm46_rice_pests_overview | Main pests of rice and how to recognise them | ICAR-IIRR | https://www.icar-iirr.org/ | OK (find exact page) |
+| ipm47_maize_pests_overview | Worms and other pests in maize | ICAR-IIMR (Maize) | https://iimr.icar.gov.in/ | VERIFY |
+| ipm48_sugarcane_pests_overview | Insect pests of sugarcane | ICAR-SBI | https://sugarcane.icar.gov.in/ | VERIFY |
+| ipm49_cotton_pests_overview | Which spray for cotton? Know the pest first | ICAR-CICR | https://cicr.org.in/ | OK (find exact page) |

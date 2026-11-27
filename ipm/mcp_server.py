@@ -37,22 +37,25 @@ def pest_risk(crop: str, crop_stage: str, temp: float, humidity: float, rainfall
 
 @mcp.tool()
 def search_ipm_knowledge(query: str) -> dict:
-    """Search our IPM notes (FAO, ICAR, IRRI, CIMMYT, CABI, universities) with TF-IDF.
+    """Search our 49 IPM notes (FAO, ICAR, IRRI, CIMMYT, CABI, universities) with hybrid
+    search (meaning embeddings + TF-IDF words), understanding everyday farmer words.
 
     Args:
-        query: a pest management question in English, e.g. "pink bollworm threshold"
+        query: a pest question in plain English, e.g. "worms eating my maize"
     Returns:
-        {"answer": text built ONLY from the top-3 passages (or "Not in my documents."),
-         "citations": [{"doc_id", "title", "org", "url", "score"}, ...]}
+        {"answer": 2-4 best sentences from the top-3 passages, cited [1][2][3]
+                   (or "Not in my documents."),
+         "citations": [{"doc_id", "title", "org", "url", "score"}, ...],
+         "suggestions": closest topics we cover when nothing matched}
     """
-    answer, sources = rag.answer(query)
-    citations = [{k: s[k] for k in ("doc_id", "title", "org", "url", "score")} for s in sources]
-    return {"answer": answer, "citations": citations}
+    result = rag.answer(query)
+    citations = [{k: s[k] for k in ("doc_id", "title", "org", "url", "score")} for s in result["sources"]]
+    return {"answer": result["text"], "citations": citations, "suggestions": result["suggestions"]}
 
 
 if __name__ == "__main__":
     if "--test" in sys.argv:
         print(pest_risk("rice", "vegetative", 26.0, 82.0, 25.0))
-        print(search_ipm_knowledge("How do I manage brown planthopper in rice?"))
+        print(search_ipm_knowledge("worms eating my maize"))
     else:
         mcp.run()  # stdio transport

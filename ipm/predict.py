@@ -45,8 +45,8 @@ def ipm_tips(crop):
     tips = []
     for rule in THRESHOLDS[crop]:
         pest_name = rule["pest"].split(" (")[0]      # "Brown planthopper (...)" -> "Brown planthopper"
-        for hit in rag.search(f"{pest_name} {crop.replace('_', ' ')} management IPM", k=2):
-            if hit["score"] >= rag.THRESHOLD:
+        for hit in rag.search(f"{pest_name} {crop.replace('_', ' ')} management IPM", k=3):
+            if hit["score"] >= rag.THRESHOLD and hit["text"] not in [t["text"] for t in tips]:
                 tips.append(dict(hit, pest=pest_name))
     return tips
 
