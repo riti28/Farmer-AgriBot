@@ -6,6 +6,8 @@ Step 7: Streamlit web app with 2 tabs.
 
 Run: streamlit run app.py
 """
+import importlib
+import os
 import pandas as pd
 import streamlit as st
 import rag
@@ -24,13 +26,28 @@ def pretty(value):
 
 @st.cache_resource(show_spinner="Loading the search model (first visit only, ~30 s)...")
 def load_search_model():
-    """Load the embedding model and chunk embeddings ONCE for all users of the app."""
-    model = rag.get_embedder()
+    """Load the embedding model ONCE for all users of the app."""
+    return rag.get_embedder()
+
+
+def notes_version():
+    """Newest change time of the note files: it changes when the notes are edited or pushed."""
+    folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus")
+    return max(os.path.getmtime(os.path.join(folder, f)) for f in os.listdir(folder))
+
+
+@st.cache_resource(show_spinner="Reading the IPM notes...")
+def load_notes(version):
+    """Re-read the notes (and their embeddings) whenever a note file changes.
+    Without this, the running app would keep the old notes after a git push."""
+    importlib.reload(rag)
+    rag.EMBEDDER = load_search_model()
     rag.get_chunk_vectors()
-    return model
+    return version
 
 
 st.set_page_config(page_title="AgriBot IPM", page_icon="🌾")
+load_notes(notes_version())
 rag.EMBEDDER = load_search_model()
 st.title("Farmer AgriBot - Integrated Pest Management (IPM)")
 st.warning(DISCLAIMER)
