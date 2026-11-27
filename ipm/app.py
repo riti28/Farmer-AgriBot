@@ -82,7 +82,7 @@ with tab2:
     if question:
         answer, sources = rag.answer(question)
         if sources:
-            answer += "\n\n**Sources:**\n" + "\n".join(
+            answer += "\n\n**Sources:**  \n" + "  \n".join(  # "  \n" = line break in Markdown
                 f"[{n}] [{s['title']}]({s['url']}) - {s['org']} (score {s['score']})"
                 for n, s in enumerate(sources, start=1))
         st.session_state.chat += [("user", question), ("assistant", answer)]

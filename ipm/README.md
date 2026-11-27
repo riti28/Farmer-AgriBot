@@ -103,6 +103,8 @@ enter `crop=cotton, crop_stage=flowering, temp=22, humidity=55, rainfall=0`.
 ```
 
 ## Deploy on Streamlit Community Cloud
+**Live app: https://farmer-agribot-ipm.streamlit.app/** (deployed from branch `ipm`, Python 3.13).
+
 Main file path: `ipm/app.py`. Streamlit Cloud uses `ipm/requirements.txt` because it sits next to the main file.
 Step-by-step instructions are in the PR description and in `LEARN.md`.
 
