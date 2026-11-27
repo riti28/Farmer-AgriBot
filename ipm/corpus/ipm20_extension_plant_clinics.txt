@@ -1,5 +1,5 @@
 Title: Getting plant protection help: extension services and plant clinics
-URL: https://www.plantwise.org/
+URL: https://www.cabi.org/
 Org: CABI (PlantwisePlus programme)
 
 Most countries have a public agricultural extension service whose officers advise farmers on pests and diseases. CABI's Plantwise programme helped set up plant clinics in many countries in Asia, Africa and Latin America, where trained plant doctors look at a sample of a sick plant brought by a farmer, diagnose the problem and write a recommendation that follows IPM principles. Farmers should take a fresh sample or clear photos of the damaged plant to the nearest extension office or plant clinic before buying any pesticide. In India this role is played by Krishi Vigyan Kendras (KVKs) and state agriculture department offices; in many African countries by district agricultural officers.

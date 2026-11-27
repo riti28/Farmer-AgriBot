@@ -1,5 +1,5 @@
 Title: How weather drives pest and disease outbreaks
-URL: https://ncipm.icar.gov.in/
-Org: ICAR-National Centre for Integrated Pest Management (NCIPM)
+URL: https://www.fao.org/plant-production-protection/en/
+Org: FAO (Plant Production and Protection)
 
 Insects are cold-blooded, so temperature controls how fast they grow and how many generations they complete in a season. Humidity and leaf wetness are critical for fungal diseases such as blast because spores need moisture to germinate. Heavy rain can wash away small insects like young caterpillars and aphids, while long dry spells favour pests like early shoot borer and mites. Because of these links, weather-based pest forewarning models are used to give farmers advance warning. Such models are a guide only; actual field scouting is still needed to confirm the pest before control.

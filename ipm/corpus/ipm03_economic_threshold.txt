@@ -1,5 +1,5 @@
 Title: Economic threshold level (ETL) and field scouting
-URL: https://ncipm.icar.gov.in/
-Org: ICAR-National Centre for Integrated Pest Management (NCIPM)
+URL: https://ppqs.gov.in/
+Org: Directorate of Plant Protection, Quarantine & Storage (Govt. of India)
 
 The economic threshold level (ETL) is the pest population or damage level at which control action should start, so that the loss stops from becoming bigger than the cost of control. Below the ETL, spraying wastes money and kills natural enemies. To use ETL, the farmer must scout the field: walk in a zig-zag or W pattern, check a fixed number of plants or hills at several spots, and count pests, eggs or damaged plants. Scouting should be done once a week, more often during the risky crop stages. Records of counts, weather and natural enemies help decide whether to act. Pheromone and light trap catches are also used as warning signals along with field counts.
